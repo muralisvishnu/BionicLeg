@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Sun Oct 06 00:07:38 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ADC
+Top-level Entity Name : ADC
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 2279
+Total pins : 101
+Total virtual pins : 0
+Total block memory bits : 8,476,480
+Total DSP Blocks : 3
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

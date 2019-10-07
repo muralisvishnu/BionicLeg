@@ -1,0 +1,27 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst C5P_arduino_adc.sw -pg 1 -lvl 4 -y 230
+preplace inst C5P_arduino_adc.jtag_uart -pg 1 -lvl 4 -y 350
+preplace inst C5P_arduino_adc.nios2_qsys.clock_bridge -pg 1
+preplace inst C5P_arduino_adc.sysid_qsys -pg 1 -lvl 4 -y 450
+preplace inst C5P_arduino_adc.pll_sys -pg 1 -lvl 2 -y 310
+preplace inst C5P_arduino_adc.adc_ltc2308 -pg 1 -lvl 4 -y 30
+preplace inst C5P_arduino_adc.nios2_qsys.reset_bridge -pg 1
+preplace inst C5P_arduino_adc.nios2_qsys -pg 1 -lvl 3 -y 120
+preplace inst C5P_arduino_adc -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst C5P_arduino_adc.onchip_memory2 -pg 1 -lvl 4 -y 150
+preplace inst C5P_arduino_adc.nios2_qsys.cpu -pg 1
+preplace inst C5P_arduino_adc.clk_50 -pg 1 -lvl 1 -y 290
+preplace netloc POINT_TO_POINT<net_container>C5P_arduino_adc</net_container>(MASTER)clk_50.clk,(SLAVE)pll_sys.refclk) 1 1 1 360
+preplace netloc EXPORT<net_container>C5P_arduino_adc</net_container>(SLAVE)sw.external_connection,(SLAVE)C5P_arduino_adc.sw_external_connection) 1 0 4 NJ 280 NJ 280 NJ 320 NJ
+preplace netloc EXPORT<net_container>C5P_arduino_adc</net_container>(SLAVE)C5P_arduino_adc.reset,(SLAVE)clk_50.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>C5P_arduino_adc</net_container>(SLAVE)adc_ltc2308.conduit_end,(SLAVE)C5P_arduino_adc.adc_ltc2308_conduit_end) 1 0 4 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc FAN_OUT<net_container>C5P_arduino_adc</net_container>(SLAVE)sw.irq,(MASTER)nios2_qsys.irq,(SLAVE)jtag_uart.irq) 1 3 1 1000
+preplace netloc INTERCONNECT<net_container>C5P_arduino_adc</net_container>(SLAVE)nios2_qsys.reset,(SLAVE)sysid_qsys.reset,(SLAVE)pll_sys.reset,(SLAVE)onchip_memory2.reset1,(MASTER)clk_50.clk_reset,(MASTER)nios2_qsys.debug_reset_request,(SLAVE)adc_ltc2308.reset_sink,(SLAVE)jtag_uart.reset,(SLAVE)sw.reset) 1 1 3 380 260 620 280 1040
+preplace netloc EXPORT<net_container>C5P_arduino_adc</net_container>(SLAVE)C5P_arduino_adc.pll_sys_locked,(SLAVE)pll_sys.locked) 1 0 2 NJ 360 NJ
+preplace netloc POINT_TO_POINT<net_container>C5P_arduino_adc</net_container>(MASTER)pll_sys.outclk1,(SLAVE)adc_ltc2308.clock_sink_adc) 1 2 2 600 60 NJ
+preplace netloc EXPORT<net_container>C5P_arduino_adc</net_container>(SLAVE)clk_50.clk_in,(SLAVE)C5P_arduino_adc.clk) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>C5P_arduino_adc</net_container>(SLAVE)onchip_memory2.clk1,(SLAVE)adc_ltc2308.clock_sink,(SLAVE)jtag_uart.clk,(MASTER)pll_sys.outclk0,(SLAVE)sysid_qsys.clk,(SLAVE)sw.clk,(SLAVE)nios2_qsys.clk) 1 2 2 560 300 1060
+preplace netloc INTERCONNECT<net_container>C5P_arduino_adc</net_container>(SLAVE)adc_ltc2308.slave,(SLAVE)sysid_qsys.control_slave,(MASTER)nios2_qsys.data_master,(MASTER)nios2_qsys.instruction_master,(SLAVE)sw.s1,(SLAVE)nios2_qsys.debug_mem_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)onchip_memory2.s1) 1 2 2 640 260 1020
+levelinfo -pg 1 0 150 1280
+levelinfo -hier C5P_arduino_adc 160 190 430 760 1120 1270

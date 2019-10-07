@@ -1,0 +1,74 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate F:\vivek\bleg\arduino_adc.qsys --block-symbol-file --output-directory=F:\vivek\bleg\arduino_adc --family="Cyclone V" --part=5CGXFC9D6F27C7
+Progress: Loading bleg/arduino_adc.qsys
+Progress: Reading input file
+Progress: Adding Motor [altera_avalon_pio 18.1]
+Progress: Parameterizing module Motor
+Progress: Adding adc_ltc2308 [adc_ltc2308 1.1]
+Progress: Parameterizing module adc_ltc2308
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: arduino_adc.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: arduino_adc.pll_sys: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: arduino_adc.pll_sys: Able to implement PLL with user settings
+Info: arduino_adc.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: arduino_adc.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate F:\vivek\bleg\arduino_adc.qsys --synthesis=VERILOG --output-directory=F:\vivek\bleg\arduino_adc\synthesis --family="Cyclone V" --part=5CGXFC9D6F27C7
+Progress: Loading bleg/arduino_adc.qsys
+Progress: Reading input file
+Progress: Adding Motor [altera_avalon_pio 18.1]
+Progress: Parameterizing module Motor
+Progress: Adding adc_ltc2308 [adc_ltc2308 1.1]
+Progress: Parameterizing module adc_ltc2308
+Progress: Adding clk_50 [clock_source 18.1]
+Progress: Parameterizing module clk_50
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding nios2_qsys [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding pll_sys [altera_pll 18.1]
+Progress: Parameterizing module pll_sys
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: arduino_adc.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: arduino_adc.pll_sys: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: arduino_adc.pll_sys: Able to implement PLL with user settings
+Info: arduino_adc.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: arduino_adc.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: arduino_adc: Generating arduino_adc "arduino_adc" for QUARTUS_SYNTH
+Info: Motor: Starting RTL generation for module 'arduino_adc_Motor'
+Info: Motor:   Generation command is [exec D:/intel/quartus/bin64/perl/bin/perl.exe -I D:/intel/quartus/bin64/perl/lib -I D:/intel/quartus/sopc_builder/bin/europa -I D:/intel/quartus/sopc_builder/bin/perl_lib -I D:/intel/quartus/sopc_builder/bin -I D:/intel/quartus/../ip/altera/sopc_builder_ip/common -I D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=arduino_adc_Motor --dir=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0002_Motor_gen/ --quartus_dir=D:/intel/quartus --verilog --config=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0002_Motor_gen//arduino_adc_Motor_component_configuration.pl  --do_build_sim=0  ]
+Info: Motor: Done RTL generation for module 'arduino_adc_Motor'
+Info: Motor: "arduino_adc" instantiated altera_avalon_pio "Motor"
+Info: adc_ltc2308: "arduino_adc" instantiated adc_ltc2308 "adc_ltc2308"
+Info: jtag_uart: Starting RTL generation for module 'arduino_adc_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/intel/quartus/bin64/perl/bin/perl.exe -I D:/intel/quartus/bin64/perl/lib -I D:/intel/quartus/sopc_builder/bin/europa -I D:/intel/quartus/sopc_builder/bin/perl_lib -I D:/intel/quartus/sopc_builder/bin -I D:/intel/quartus/../ip/altera/sopc_builder_ip/common -I D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=arduino_adc_jtag_uart --dir=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0004_jtag_uart_gen/ --quartus_dir=D:/intel/quartus --verilog --config=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0004_jtag_uart_gen//arduino_adc_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'arduino_adc_jtag_uart'
+Info: jtag_uart: "arduino_adc" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: nios2_qsys: "arduino_adc" instantiated altera_nios2_gen2 "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'arduino_adc_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec D:/intel/quartus/bin64/perl/bin/perl.exe -I D:/intel/quartus/bin64/perl/lib -I D:/intel/quartus/sopc_builder/bin/europa -I D:/intel/quartus/sopc_builder/bin/perl_lib -I D:/intel/quartus/sopc_builder/bin -I D:/intel/quartus/../ip/altera/sopc_builder_ip/common -I D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/intel/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=arduino_adc_onchip_memory2 --dir=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0005_onchip_memory2_gen/ --quartus_dir=D:/intel/quartus --verilog --config=C:/Users/VIVEKJ~1/AppData/Local/Temp/alt8172_914681291753641565.dir/0005_onchip_memory2_gen//arduino_adc_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]

@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "UART_TX",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SCK",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SDI",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_CONVST",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50_B3B",
+					"strict" : false
+				},
+				{
+					"name" : "CPU_RESET_n",
+					"strict" : false
+				},
+				{
+					"name" : "UART_RX",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SDO",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

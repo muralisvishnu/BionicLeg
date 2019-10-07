@@ -1,0 +1,63 @@
+03:28:02 **** Incremental Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../bioleg_bsp//HAL/inc -I../bioleg_bsp/ -I../bioleg_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+Info: Linking bioleg.elf
+nios2-elf-g++  -T'../bioleg_bsp//linker.x' -msys-crt0='../bioleg_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../bioleg_bsp/   -Wl,-Map=bioleg.map   -O0 -g -Wall   -mno-hw-div -mhw-mul -mno-hw-mulx -mgpopt=global  -o bioleg.elf obj/default/hello_world.o -lm -msys-lib=m
+nios2-elf-insert bioleg.elf --thread_model hal --cpu_name nios2_qsys --qsys true --simulation_enabled false --id 35 --sidp 0x201038 --timestamp 1570300533 --stderr_dev uart_0 --stdin_dev uart_0 --stdout_dev uart_0 --sopc_system_name arduino_adc --quartus_project_dir "F:/vivek/blegCOPY" --jdi ../..//output_files/ADC.jdi --sopcinfo F:/vivek/blegCOPY/software/bioleg_bsp/../../arduino_adc.sopcinfo
+Info: (bioleg.elf) 70 KBytes program size (code + initialized data).
+Info:              949 KBytes free for stack + heap.
+Info: Creating bioleg.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source bioleg.elf >bioleg.objdump
+[bioleg build complete]
+03:28:07 **** Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+03:28:08 **** Incremental Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+03:32:34 **** Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+03:32:35 **** Incremental Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+17:00:38 **** Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+17:00:43 **** Incremental Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+17:12:57 **** Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]
+17:13:00 **** Incremental Build of configuration Nios II for project bioleg ****
+make all 
+Info: Building ../bioleg_bsp/
+D:/intel/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../bioleg_bsp/
+[BSP build complete]
+[bioleg build complete]

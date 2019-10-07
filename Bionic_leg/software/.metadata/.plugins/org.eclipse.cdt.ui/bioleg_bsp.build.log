@@ -1,0 +1,6 @@
+00:20:56 **** Clean-only build of configuration Nios II for project bioleg_bsp ****
+make clean 
+[BSP clean complete]
+
+00:20:56 Build Finished (took 244ms)
+

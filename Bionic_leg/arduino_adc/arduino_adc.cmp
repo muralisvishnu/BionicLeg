@@ -1,0 +1,15 @@
+	component arduino_adc is
+		port (
+			adc_ltc2308_conduit_end_CONVST : out std_logic;                           -- CONVST
+			adc_ltc2308_conduit_end_SCK    : out std_logic;                           -- SCK
+			adc_ltc2308_conduit_end_SDI    : out std_logic;                           -- SDI
+			adc_ltc2308_conduit_end_SDO    : in  std_logic                    := 'X'; -- SDO
+			clk_clk                        : in  std_logic                    := 'X'; -- clk
+			motor_export                   : out std_logic_vector(3 downto 0);        -- export
+			pll_sys_locked_export          : out std_logic;                           -- export
+			reset_reset_n                  : in  std_logic                    := 'X'; -- reset_n
+			uart_rxd                       : in  std_logic                    := 'X'; -- rxd
+			uart_txd                       : out std_logic                            -- txd
+		);
+	end component arduino_adc;
+
